@@ -1,22 +1,22 @@
 //
-//  DEMONavigationController.m
+//  BleNavigationController.m
 //  REFrostedViewControllerExample
 //
 //  Created by Roman Efimov on 9/18/13.
 //  Copyright (c) 2013 Roman Efimov. All rights reserved.
 //
 
-#import "DEMONavigationController.h"
-#import "DEMOMenuViewController.h"
+#import "BleNavigationController.h"
+#import "MenuViewController.h"
 #import "UIViewController+REFrostedViewController.h"
 
-@interface DEMONavigationController ()
+@interface BleNavigationController ()
 
-@property (strong, readwrite, nonatomic) DEMOMenuViewController *menuViewController;
+@property (strong, readwrite, nonatomic) BleNavigationController *menuViewController;
 
 @end
 
-@implementation DEMONavigationController
+@implementation BleNavigationController
 
 - (void)viewDidLoad
 {

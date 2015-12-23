@@ -1,5 +1,5 @@
 //
-//  DEMONavigationController.h
+//  BleNavigationController.h
 //  REFrostedViewControllerExample
 //
 //  Created by Roman Efimov on 9/18/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DEMONavigationController : UINavigationController
+@interface BleNavigationController : UINavigationController
 
 - (void)showMenu;
 

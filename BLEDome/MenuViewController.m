@@ -1,21 +1,21 @@
 //
-//  DEMOMenuViewController.m
+//  MenuViewController.m
 //  REFrostedViewControllerExample
 //
 //  Created by Roman Efimov on 9/18/13.
 //  Copyright (c) 2013 Roman Efimov. All rights reserved.
 //
 
-#import "DEMOMenuViewController.h"
+#import "MenuViewController.h"
 #import "UIViewController+REFrostedViewController.h"
-@interface DEMOMenuViewController ()
+@interface MenuViewController ()
 
 @property(strong,nonatomic)NSMutableArray*array;
 @property(strong,nonatomic)NSMutableArray*imageArray;
 
 
 @end
-@implementation DEMOMenuViewController
+@implementation MenuViewController
 
 
 - (void)viewDidLoad
@@ -100,7 +100,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UINavigationController *navigationController = (UINavigationController *)self.frostedViewController.contentViewController;
+// UINavigationController *navigationController = (UINavigationController *)self.frostedViewController.contentViewController;
     
 //    if (indexPath.section == 0 && indexPath.row == 0) {
 //        DEMOHomeViewController *homeViewController = [[DEMOHomeViewController alloc] init];

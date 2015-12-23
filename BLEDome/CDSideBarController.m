@@ -54,7 +54,7 @@
         [_backgroundMenuView addSubview:button];
     }
 
-    _backgroundMenuView.frame = CGRectMake(view.frame.size.width, 0, 90, view.frame.size.height);
+    _backgroundMenuView.frame = CGRectMake(-100, 0, 90, view.frame.size.height);
     _backgroundMenuView.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5f];
     [view addSubview:_backgroundMenuView];
 }
@@ -118,8 +118,8 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:0.4 animations:^{
             _menuButton.alpha = 0.0f;
-            _menuButton.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -90, 0);
-            _backgroundMenuView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -90, 0);
+            _menuButton.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 90, 0);
+            _backgroundMenuView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 90, 0);
         }];
     });
     for (UIButton *button in _buttonList)

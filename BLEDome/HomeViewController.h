@@ -1,5 +1,5 @@
 //
-//  DEMOHomeViewController.h
+//  HomeViewController.h
 //  REFrostedViewControllerExample
 //
 //  Created by Roman Efimov on 9/18/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DEMOHomeViewController : UIViewController
+@interface HomeViewController : UIViewController
 
 @end

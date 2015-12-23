@@ -1,5 +1,5 @@
 //
-//  DEMOMenuViewController.h
+//  MenuViewController.h
 //  REFrostedViewControllerExample
 //
 //  Created by Roman Efimov on 9/18/13.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "REFrostedViewController.h"
 
-@interface DEMOMenuViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface MenuViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

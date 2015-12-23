@@ -12,4 +12,19 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+
+#import <iflyMSC/iflyMSC.h>//讯飞语音
+#import "BabyBluetooth.h"//蓝牙
+#import "REFrostedViewController.h"//侧滑
+
+
+#define MAS_SHORTHAND
+// 只要添加了这个宏，equalTo就等价于mas_equalTo
+#define MAS_SHORTHAND_GLOBALS
+
+#import <Masonry.h>//自动布局
+
+
+#import "SVProgressHUD.h"
+
 #endif /* BLEDome_pch */

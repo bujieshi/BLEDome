@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "REFrostedViewController.h"
+#import "MenuViewController.h"
+#import "HomeViewController.h"
+#import "BleNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +22,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.rootViewController = [[ViewController alloc] init];
+//    self.window.backgroundColor = [UIColor whiteColor];
+    
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",@"567504de"];
+    [IFlySpeechUtility createUtility:initString];
+//
+//    // Create frosted view controller
+    //
+
+    BleNavigationController *navigationController = [[BleNavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+    MenuViewController *menuController = [[MenuViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    // Create frosted view controller
+    //
+    REFrostedViewController *frostedViewController = [[REFrostedViewController alloc] initWithContentViewController:navigationController menuViewController:menuController];
+    frostedViewController.direction = REFrostedViewControllerDirectionLeft;
+    frostedViewController.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
+    
+    // Make it a root controller
+    //
+    self.window.rootViewController = frostedViewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
-
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
