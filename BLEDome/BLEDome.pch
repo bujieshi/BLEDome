@@ -13,7 +13,7 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 
-#import <iflyMSC/iflyMSC.h>//讯飞语音
+
 #import "BabyBluetooth.h"//蓝牙
 #import "REFrostedViewController.h"//侧滑
 
@@ -26,5 +26,10 @@
 
 
 #import "SVProgressHUD.h"
+
+#import<AFNetworking.h>
+
+#import "CommonFunc.h"
+
 
 #endif /* BLEDome_pch */

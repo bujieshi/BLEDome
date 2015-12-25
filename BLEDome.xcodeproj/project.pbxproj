@@ -44,7 +44,7 @@
 		23DD136A1C2540D3005CD239 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD13691C2540D3005CD239 /* CoreTelephony.framework */; };
 		23DD136C1C2540DF005CD239 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD136B1C2540DF005CD239 /* CoreLocation.framework */; };
 		23DD136E1C2540F0005CD239 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD136D1C2540F0005CD239 /* libz.tbd */; };
-		23DD13771C25522E005CD239 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DD13761C25522E005CD239 /* iflyMSC.framework */; };
+		23DD137B1C2BBBF1005CD239 /* CommonFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DD137A1C2BBBF1005CD239 /* CommonFunc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,8 +113,9 @@
 		23DD13691C2540D3005CD239 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		23DD136B1C2540DF005CD239 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		23DD136D1C2540F0005CD239 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		23DD13761C25522E005CD239 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		23DD13781C2793DB005CD239 /* BLEDome.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDome.pch; sourceTree = "<group>"; };
+		23DD13791C2BBBF1005CD239 /* CommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunc.h; sourceTree = "<group>"; };
+		23DD137A1C2BBBF1005CD239 /* CommonFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunc.m; sourceTree = "<group>"; };
 		2F9A17CB802A7BCF03B76947 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		494273F1F1F6924A3CF75072 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E815479A81EB8DE7B4A3D338 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23DD13771C25522E005CD239 /* iflyMSC.framework in Frameworks */,
 				23DD136E1C2540F0005CD239 /* libz.tbd in Frameworks */,
 				23DD136C1C2540DF005CD239 /* CoreLocation.framework in Frameworks */,
 				23DD136A1C2540D3005CD239 /* CoreTelephony.framework in Frameworks */,
@@ -221,6 +221,8 @@
 				23B9D7201C1E74E50099C902 /* LaunchScreen.storyboard */,
 				23B9D7231C1E74E50099C902 /* Info.plist */,
 				23B9D7121C1E74E50099C902 /* Supporting Files */,
+				23DD13791C2BBBF1005CD239 /* CommonFunc.h */,
+				23DD137A1C2BBBF1005CD239 /* CommonFunc.m */,
 			);
 			path = BLEDome;
 			sourceTree = "<group>";
@@ -255,7 +257,6 @@
 		46DB7F7BAC18B0CD4DAD3320 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23DD13761C25522E005CD239 /* iflyMSC.framework */,
 				23DD136D1C2540F0005CD239 /* libz.tbd */,
 				23DD136B1C2540DF005CD239 /* CoreLocation.framework */,
 				23DD13691C2540D3005CD239 /* CoreTelephony.framework */,
@@ -479,6 +480,7 @@
 				23B9D71A1C1E74E50099C902 /* ViewController.m in Sources */,
 				23DD130B1C24EEF7005CD239 /* CDSideBarController.m in Sources */,
 				23B9D7171C1E74E50099C902 /* AppDelegate.m in Sources */,
+				23DD137B1C2BBBF1005CD239 /* CommonFunc.m in Sources */,
 				23DD13501C250C18005CD239 /* MenuViewController.m in Sources */,
 				23DD13561C251DB8005CD239 /* BleNavigationController.m in Sources */,
 				23B9D7141C1E74E50099C902 /* main.m in Sources */,

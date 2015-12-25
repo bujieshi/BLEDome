@@ -27,8 +27,6 @@
 //    self.window.rootViewController = [[ViewController alloc] init];
 //    self.window.backgroundColor = [UIColor whiteColor];
     
-    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",@"567504de"];
-    [IFlySpeechUtility createUtility:initString];
 //
 //    // Create frosted view controller
     //
